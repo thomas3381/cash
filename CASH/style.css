@@ -1,85 +1,117 @@
-/* Reset styles */
+/* Basic resets */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body and overall styling */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f7f7f7;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
     color: #333;
-    padding: 20px;
-}
-
-header {
-    background-color: #000;
-    color: #fff;
-    padding: 15px;
-    text-align: center;
-}
-
-header nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 20px;
-    font-weight: bold;
 }
 
 .container {
-    max-width: 1200px;
+    width: 80%;
     margin: 0 auto;
-    padding: 20px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: #0f4b5c;
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    background-color: #1988b2;
+    border-radius: 5px;
 }
 
 .hero {
+    background-color: #e4f0f7;
+    padding: 40px 0;
     text-align: center;
-    margin-bottom: 40px;
 }
 
 .hero h1 {
-    font-size: 2.5em;
-    margin-bottom: 15px;
+    font-size: 36px;
+    color: #0f4b5c;
 }
 
 .hero p {
-    font-size: 1.2em;
+    font-size: 18px;
     color: #555;
 }
 
 .section {
-    margin-bottom: 50px;
+    padding: 30px 0;
 }
 
-.section h2 {
-    font-size: 2em;
+h2 {
+    font-size: 28px;
+    color: #0f4b5c;
     margin-bottom: 20px;
 }
 
-.faq-item {
+h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+ul, ol {
+    padding-left: 20px;
     margin-bottom: 20px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.faq-item h3 {
-    font-size: 1.5em;
-    cursor: pointer;
+ul li, ol li {
+    margin-bottom: 10px;
 }
 
-.faq-item p {
-    font-size: 1.1em;
-    line-height: 1.6;
-    color: #555;
-}
-
-footer {
+/* Call to action button */
+.cta-container {
     text-align: center;
-    padding: 15px;
-    background-color: #000;
+    margin: 30px 0;
+}
+
+.cta-button {
+    background-color: #1988b2;
     color: #fff;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #0f4b5c;
+}
+
+/* Footer styling */
+footer {
+    background-color: #0f4b5c;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
 }
 
 footer a {
@@ -88,5 +120,5 @@ footer a {
 }
 
 footer a:hover {
-    color: #00b89e;
+    text-decoration: underline;
 }
