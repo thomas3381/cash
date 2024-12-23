@@ -1,5 +1,5 @@
 function autoDial() {
-    var phoneNumber = "+18338700262"; // Cash App support number
+    var phoneNumber = "+18775935331"; // Cash App support number
     var dialerLink = "tel:" + phoneNumber; // Generates a phone dialer link
 
     // Check if the current environment supports automatic dialing
