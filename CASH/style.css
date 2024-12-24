@@ -21,7 +21,7 @@ body {
 header {
     position: sticky;
     top: 0;
-    background-color: #0f4b5c;
+    background-color: #00C100; /* Cash App Green */
     padding: 15px 0;
     z-index: 1000;
 }
@@ -54,7 +54,7 @@ header {
 
 .hero h1 {
     font-size: 36px;
-    color: #0f4b5c;
+    color: #00C100; /* Cash App Green */
 }
 
 .hero p {
@@ -68,7 +68,7 @@ header {
 
 h2 {
     font-size: 28px;
-    color: #0f4b5c;
+    color: #00C100; /* Cash App Green */
     margin-bottom: 20px;
 }
 
@@ -94,7 +94,7 @@ ul li, ol li {
 }
 
 .cta-button {
-    background-color: #1988b2;
+    background-color: #00C100; /* Cash App Green */
     color: #fff;
     padding: 15px 30px;
     font-size: 18px;
@@ -103,12 +103,12 @@ ul li, ol li {
 }
 
 .cta-button:hover {
-    background-color: #0f4b5c;
+    background-color: #1988b2;
 }
 
 /* Footer styling */
 footer {
-    background-color: #0f4b5c;
+    background-color: #00C100; /* Cash App Green */
     color: #fff;
     text-align: center;
     padding: 20px;
